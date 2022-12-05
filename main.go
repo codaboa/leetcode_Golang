@@ -1,7 +1,11 @@
 package main
 
+import "fmt"
+
 func main() {
 
-	test := 
+	any := []int{1, 2, 3}
 
+	test := runningSum(any)
+	fmt.Println(test)
 }

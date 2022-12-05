@@ -11,8 +11,11 @@ Explanation: Running sum is obtained as follows: [1, 1+2, 1+2+3, 1+2+3+4].
 package main
 
 func runningSum(nums []int) []int {
+
 	for i := 1; i < len(nums); i++ {
 		nums[i] += nums[i-1]
 	}
+
+	// fmt.Println(nums[0])
 	return nums
 }
